@@ -9,12 +9,14 @@ import { Col, Container, Row } from "reactstrap";
 import Menus from "./Components/Menus";
 import Home from "./Components/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <>
       <Router>
         <Container>
+          <ToastContainer />
           <Header />
           <Row>
             <Col md={4}>
